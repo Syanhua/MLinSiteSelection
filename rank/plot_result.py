@@ -7,9 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
-######################################################################################
-# 誤差のプロット関数。自動的に保存するので上書きされたくない時は名前を変える
-
 def acc(train_acc, test_acc, savename='result_acc.pdf'):
     ep = np.arange(len(train_acc)) + 1
     # for i in range(300,500):

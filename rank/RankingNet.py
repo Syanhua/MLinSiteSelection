@@ -21,11 +21,6 @@ from learning2rank.utils import NNfuncs
 # Define model
 class Model(chainer.Chain):
     """
-    RankNet - Pairwise comparison of ranking.
-    The original paper:
-        http://research.microsoft.com/en-us/um/people/cburges/papers/ICML_ranking.pdf
-    Japanese only:
-        http://qiita.com/sz_dr/items/0e50120318527a928407
     """
     def __init__(self, n_in, n_units1, n_units2, n_out):
         super(Model, self).__init__(
